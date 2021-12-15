@@ -1,0 +1,55 @@
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\bin\x86\Release\Picasso.exe
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\bin\x86\Release\Picasso.pdb
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.Properties.Resources.resources
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.csproj.GenerateResource.Cache
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.exe
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.pdb
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\bin\x86\Release\Picasso.exe.config
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.alladin.resources
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.selector.resources
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\x86\Release\Picasso.converter2.resources
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\bin\x86\Release\Picasso.exe.config
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.exe
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.pdb
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\bin\x86\Release\Picasso.exe
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\bin\x86\Release\Picasso.pdb
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\ResolveAssemblyReference.cache
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.alladin.resources
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.converter2.resources
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.Properties.Resources.resources
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.selector.resources
+H:\4_3_2010_updates_de_manha\picasso_110_build_0005\Picasso\Picasso\obj\x86\Release\Picasso.csproj.GenerateResource.Cache
+C:\al\picasso_atualizado\Picasso\Picasso\bin\x86\Release\Picasso.exe.config
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.exe
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.pdb
+C:\al\picasso_atualizado\Picasso\Picasso\bin\x86\Release\Picasso.exe
+C:\al\picasso_atualizado\Picasso\Picasso\bin\x86\Release\Picasso.pdb
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\ResolveAssemblyReference.cache
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.alladin.resources
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.converter2.resources
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.Properties.Resources.resources
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.selector.resources
+C:\al\picasso_atualizado\Picasso\Picasso\obj\x86\Release\Picasso.csproj.GenerateResource.Cache
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\bin\x86\Release\Picasso.exe.config
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.exe
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.pdb
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\bin\x86\Release\Picasso.exe
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\bin\x86\Release\Picasso.pdb
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\ResolveAssemblyReference.cache
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.alladin.resources
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.converter2.resources
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.Properties.Resources.resources
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.selector.resources
+C:\picasso_1.2.6_build_00010\Picasso\Picasso\obj\x86\Release\Picasso.csproj.GenerateResource.Cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\x86\Release\Picasso.exe.config
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\x86\Release\Picasso.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\x86\Release\Picasso.pdb
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.alladin.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.converter2.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.Properties.Resources.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.selector.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.csproj.GenerateResource.Cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.pdb
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\x86\Release\Picasso.csprojResolveAssemblyReference.cache

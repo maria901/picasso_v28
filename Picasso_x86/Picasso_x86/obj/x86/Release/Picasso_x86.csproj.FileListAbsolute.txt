@@ -1,0 +1,9 @@
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\bin\Release\Picasso_x86.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\ResolveAssemblyReference.cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso_x86.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso.alladin.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso.converter2.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso.selector.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso_x86.csproj.GenerateResource.Cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\x86\Picasso_x86.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Release\Picasso.ver_fotos.resources

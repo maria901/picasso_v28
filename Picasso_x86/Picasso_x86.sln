@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+# SharpDevelop 3.2.1.6466
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Picasso_x86", "Picasso_x86\Picasso_x86.csproj", "{E2D31D1D-10BF-47DD-83FD-83A580535570}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2D31D1D-10BF-47DD-83FD-83A580535570}.Debug|x86.Build.0 = Debug|x86
+		{E2D31D1D-10BF-47DD-83FD-83A580535570}.Debug|x86.ActiveCfg = Debug|x86
+		{E2D31D1D-10BF-47DD-83FD-83A580535570}.Release|x86.Build.0 = Release|x86
+		{E2D31D1D-10BF-47DD-83FD-83A580535570}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

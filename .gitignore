@@ -1,0 +1,26 @@
+# Object files
+*.o
+*.a
+*.ko
+*.lo
+*.la
+*.ric
+*~
+*.zip
+
+# Libraries
+*.lib
+
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+*.dSYM   # apple
+
+# Executables
+*.exe
+*.out
+*.app
+*.php

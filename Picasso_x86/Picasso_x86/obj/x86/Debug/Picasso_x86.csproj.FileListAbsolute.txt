@@ -1,0 +1,5 @@
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\bin\Debug\Picasso_x86.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\bin\Debug\Picasso_x86.pdb
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Debug\Picasso_x86.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso_x86\Picasso_x86\obj\x86\Debug\Picasso_x86.pdb

@@ -1,0 +1,222 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+namespace Picasso
+{
+    public partial class converter2 : Form
+    {
+        public converter2()
+        {
+            InitializeComponent();
+        }
+
+        private void converter2_Load(object sender, EventArgs e)
+        {
+            this.Text = Alladin_converter.name;
+        }
+                    double a=1.0;
+                    double b=1.0;
+        int disable = 0;
+        
+        string ar_png_file="";
+        string ar_png_file_to_delete="";
+        private void button1_Click(object sender, EventArgs e)
+        {
+        	ar_png_file="";
+            DialogResult eu = of.ShowDialog();
+
+            if (eu == DialogResult.OK)
+            {
+                input.Text = of.FileName;
+                
+                int ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+				if(1==ricardo_returnvalue)
+                	{
+                		
+                	MessageBox .Show ("Missing file dwebp.exe in the same path of Picasso.exe","Error");
+                	return ;
+                	
+                	}
+				if(2==ricardo_returnvalue)
+				{
+					
+					MessageBox.Show ("Unable to create a temporary file in the same path of Picasso.exe");
+					return;
+					
+				}
+				if(4==ricardo_returnvalue)
+				{
+					ar_png_file=input.Text;//file is not a webp file
+				}
+                Alladin_converter.dprintf ("Arquivo " + ar_png_file);
+                
+                output.Text = of.FileName + ".jpg";
+                if (CheckState.Checked == PNG.CheckState)
+                {
+                    output.Text = of.FileName + ".png";
+                }
+                if (CheckState.Checked == WebP.CheckState)
+                {
+                    output.Text = of.FileName + ".webp";
+                }
+                
+                int width1  =0;
+                int height1 =0;
+                disable    = 1;
+                try
+                {
+                    Alladin_converter.get_image_data(ar_png_file, ref width1, ref height1);
+                    width.Text = width1.ToString();
+                    height.Text = height1.ToString();
+
+                    a = width1;
+                    b = height1;
+                    a = a / b;
+
+                  label5.Text =  "Adjust value: " + a.ToString();
+                }
+                catch (Exception ee)
+                {
+                    MessageBox.Show(ee.Message);
+                    width.Text = "800";
+                    height.Text = "600";
+                }
+                disable = 0;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult eu = sf.ShowDialog();
+
+            if (eu == DialogResult.OK)
+            {
+                //input.Text = of.FileName;
+                output.Text = of.FileName;// +".jpg";
+            }
+        }
+
+        private void quality_Scroll(object sender, EventArgs e)
+        {
+            label3.Text = "Conversion quality " + quality.Value + "%";
+        }
+
+        private void executor_Click(object sender, EventArgs e)
+        {
+        	int amanda_returnvalue=0;
+            executor.Text = "Working...";
+
+            try
+            {
+                bool is_ong_alladin=false;
+				bool is_webp_amanda=false;
+                if(CheckState.Checked ==PNG.CheckState )
+                {
+                    is_ong_alladin=true;
+                }
+                if(CheckState.Checked ==WebP.CheckState )
+                {
+                    is_webp_amanda=true;
+                }
+                
+                amanda_returnvalue=Alladin_converter.microsoft_convert2(ar_png_file, output.Text, int.Parse(width.Text), int.Parse(height.Text), quality.Value, is_ong_alladin, is_webp_amanda);
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+            }
+                executor.Text = "Convert";
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (CheckState.Unchecked == ratio.CheckState)
+            {
+                return;
+            }
+            if (1 == disable)
+            {
+                return;
+            }
+            if ("" == height.Text)
+            {
+                return;
+            }
+            double c;
+            double d;
+            int saida;
+            c = double.Parse(height.Text);
+            d = c * a;
+            saida = Convert.ToInt32(d);
+            disable = 1;
+            width.Text = saida.ToString();
+            disable = 0;
+        }
+
+        private void width_TextChanged(object sender, EventArgs e)
+        {
+
+            if(CheckState .Unchecked ==ratio.CheckState )
+            {
+                return;
+            }
+            if (1 == disable)
+            {
+                return;
+            }
+            if ("" == width.Text)
+            {
+                return;
+            }
+            double c;
+            double d;
+            int saida;
+            c = double.Parse(width.Text);
+            d = c / a;
+            saida = Convert.ToInt32(d);
+            disable = 1;
+            height.Text = saida.ToString();
+            disable = 0;
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Alladin_converter.About();
+        }
+		void WebPMouseUp(object sender, MouseEventArgs e)
+		{
+			if(WebP.Checked == true)
+			{
+			
+				PNG.Checked = false;
+				output.Text = of.FileName + ".webp";
+				
+			}						
+		}
+		void PNGMouseUp(object sender, MouseEventArgs e)
+		{
+			if(PNG.Checked == true)
+			{
+			
+				WebP.Checked = false;
+				output.Text = of.FileName + ".png";
+			
+			}
+		}
+		void Converter2FormClosing(object sender, FormClosingEventArgs e)
+		{
+			if(""!=ar_png_file_to_delete)
+			{
+			
+				File.Delete (ar_png_file_to_delete);
+				ar_png_file_to_delete="";
+				
+			}
+		}
+    }
+}

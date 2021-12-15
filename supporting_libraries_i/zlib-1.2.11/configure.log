@@ -1,0 +1,42 @@
+--------------------
+./configure --host=x86_64-w64-mingw32
+Sun Apr 11 06:05:00 -03 2021
+unknown option: --host=x86_64-w64-mingw32
+./configure --help for help
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --host=i686-w64-mingw32
+ter,  4 de mai de 2021 12:06:55
+unknown option: --host=i686-w64-mingw32
+./configure --help for help
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure
+ter,  4 de mai de 2021 12:07:07
+Checking for gcc...
+=== ztest4991.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+gcc -c ztest4991.c
+./configure: linha 182: gcc: comando não encontrado
+... using cc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest4991.c ===
+int foo() { return 0; }
+===
+cc -c -O ztest4991.c
+./configure: linha 370: cc: comando não encontrado
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+

@@ -1,0 +1,18 @@
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\bin\Debug\Picasso.exe
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\bin\Debug\Picasso.pdb
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\Debug\ResolveAssemblyReference.cache
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\Debug\Picasso.Properties.Resources.resources
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\Debug\Picasso.csproj.GenerateResource.Cache
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\Debug\Picasso.exe
+C:\Arab\pen drive\back\Arab\aoprojeto\conversor de fotos\Picasso\Picasso\Picasso\obj\Debug\Picasso.pdb
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\Debug\Picasso.exe.config
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\Debug\Picasso.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\bin\Debug\Picasso.pdb
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\ResolveAssemblyReference.cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.alladin.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.converter2.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.Properties.Resources.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.selector.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.csproj.GenerateResource.Cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Picasso\Picasso\obj\Debug\Picasso.pdb

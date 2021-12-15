@@ -1,0 +1,6 @@
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer\Photo_Viewer\obj\x86\Release\ResolveAssemblyReference.cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer\Photo_Viewer\obj\x86\Release\Photo_Viewer.MainForm.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer\Photo_Viewer\obj\x86\Release\Photo_Viewer.ver_fotos.resources
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer\Photo_Viewer\obj\x86\Release\Photo_Viewer.csproj.GenerateResource.Cache
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer\Photo_Viewer\obj\x86\Release\Photo_Viewer.exe
+C:\AMANDA AVA KOCI PEREIRA\nosso_trabalho\amanda_projects\project picasso\Photo_Viewer.exe
