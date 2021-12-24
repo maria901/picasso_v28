@@ -129,8 +129,8 @@ namespace Picasso
 					{
 						goto deu_certo_ric;
 					}
-						
-						ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+					
+					ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
 					if(1==ricardo_returnvalue)
 					{
 						
@@ -211,7 +211,15 @@ namespace Picasso
 			{
 				input.Text = of.FileName;
 
-				int ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+				int ricardo_returnvalue;
+				
+				ricardo_returnvalue = Alladin_converter.amanda_ricardo_load_AVIF_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+				
+				if(0 == ricardo_returnvalue)
+				{
+					goto pula_agora_ric;
+				}
+				ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
 				if(1==ricardo_returnvalue)
 				{
 					
@@ -229,6 +237,7 @@ namespace Picasso
 				{
 					ar_png_file=input.Text;//file is not a webp file
 				}
+				pula_agora_ric:;
 				Alladin_converter.dprintf ("Arquivo " + ar_png_file);
 
 				output.Text = of.FileName + ".jpg";
@@ -405,7 +414,7 @@ namespace Picasso
 		}
 		void MenuStrip1ItemClicked(object sender, ToolStripItemClickedEventArgs e)
 		{
-	
+			
 		}
 		
 	}
