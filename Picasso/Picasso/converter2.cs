@@ -215,6 +215,9 @@ namespace Picasso
 				
 				ricardo_returnvalue = Alladin_converter.amanda_ricardo_load_AVIF_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
 				
+				//Alladin_converter.pedro
+				Alladin_converter.dprintf("seu retorno amigo " + ricardo_returnvalue);
+				
 				if(0 == ricardo_returnvalue)
 				{
 					goto pula_agora_ric;
