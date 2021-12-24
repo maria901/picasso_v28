@@ -92,7 +92,7 @@ namespace Picasso
 			System.Drawing.Rectangle area = myScreen.WorkingArea;
 						
 			width_k_p  = area.Width  - 16;
-			height_k_p = area.Height - 30;
+			height_k_p = area.Height - 40;
 			
 			Image image_k_p = Image.FromFile(filename_k_p);
 			
@@ -190,6 +190,7 @@ namespace Picasso
 		}
 		private void pictureBox1_Resize(object sender, EventArgs e)
 		{
+			//Environment.Exit(25);
 			Rectangle rect_k_p = Screen.PrimaryScreen.WorkingArea;
 			
 			if(1 < disable_picture_resize_event)
@@ -203,7 +204,7 @@ namespace Picasso
 			{
 				
 				base.Width = this.p.Width + 3 + 2 + 1 + 10;
-				base.Height = this.p.Height + 26 + 2;
+				base.Height = this.p.Height + 26 + 2 + 11;
 				
 			}
 			catch

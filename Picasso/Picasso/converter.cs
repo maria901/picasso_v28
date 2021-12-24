@@ -1,5 +1,5 @@
 ﻿
- /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                                                                              *
  *        Licensa de Cópia (C) <2021>  <Corporação do Trabalho Binário>         *
  *                                                                              *
@@ -26,10 +26,10 @@
  *     Little_Amanda:    arsoftware10@gmail.com    amanda.@arsoftware.net.br    *
  *                                                                              *
  *     contato imediato(para uma resposta muita rápida) WhatsApp                *
- *     (+55)41 9627 1708 - isto está sempre ligado (eu acho...)                 *      
+ *     (+55)41 9627 1708 - isto está sempre ligado (eu acho...)                 *
  *                                                                              *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  **/
- 
+
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -91,6 +91,9 @@ namespace Picasso
 		
 		[DllImport("dwebp_ar.dll")]
 		public static extern int dwebp_main_call_ar(string input_filename_ar, string output_filename_ar);
+
+		[DllImport("heif-convert_v.DLL")]
+		public static extern int main_do_ric(string quality_ar, string input_filename_ar, string output_filename_ar);
 
 		[DllImport("kernel32.dll")]
 		static extern void OutputDebugString(string lpOutputString);
@@ -179,8 +182,8 @@ namespace Picasso
 				
 				try
 				{
-				Alladin_converter.microsoft_convert_to_png(amanda_infile, ricardo_outfile);
-				goto continua_ar;
+					Alladin_converter.microsoft_convert_to_png(amanda_infile, ricardo_outfile);
+					goto continua_ar;
 				}
 				catch
 				{
@@ -192,6 +195,82 @@ namespace Picasso
 			}
 			continua_ar:;
 			return 0;
+
+		}
+		
+		public static int amanda_ricardo_load_AVIF_image_file(string amanda_infile, ref string png_file, ref string ar_png_file_to_delete__)
+		{
+			int ret_ar;
+			
+			string ricardo_outfile="";
+			/*
+			 * //for historical reasons...
+			if(!File.Exists ("dwebp.exe"))
+			{
+				return 1;
+			}
+			 */
+			//return 0;
+
+			string amanda_filename = Application.StartupPath + "\\" + ".$$$_me_desculpe_mas_minha_esposa_eh_uma_gata_$$$";
+			string ricardo_extension=".png";
+			int ricardo_counter=0;
+
+			File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+
+			while(File.Exists (amanda_filename+ricardo_counter.ToString ()+ricardo_extension))
+			{
+				File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+				ricardo_counter++;
+				File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+				if(10==ricardo_counter)
+				{
+
+					return 2;
+
+				}
+			}
+
+			ricardo_outfile=amanda_filename+ricardo_counter.ToString ()+ricardo_extension;
+			png_file = ricardo_outfile;
+
+			ar_png_file_to_delete__ = ricardo_outfile;
+			/*
+			process.StartInfo.FileName = @"dwebp.exe";
+			process.StartInfo.Arguments = "\"" + amanda_infile  + "\" -o \"" + ricardo_outfile + "\" ";
+
+			Alladin_converter.dprintf("Argumentos: " + process.StartInfo.FileName + " " + process.StartInfo.Arguments);
+
+			//Usage: dwebp in_file [options] [-o out_file]
+
+			//ava_util.ar_dprintf(process.StartInfo.Arguments);
+
+			process.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+			process.Start();
+			process.WaitForExit();
+			 */
+			Alladin_converter.dprintf("veja " + amanda_infile + " outfile: " + ricardo_outfile);
+			ret_ar = main_do_ric("100", amanda_infile,   ricardo_outfile);
+			
+			if(0 != ret_ar)
+			{
+				
+				/*
+				try
+				{
+					Alladin_converter.microsoft_convert_to_png(amanda_infile, ricardo_outfile);
+					goto continua_ar;
+				}
+				catch
+				{
+					MessageBox.Show("Impossible to convert file input file to internal png file");
+					return 4;
+				}
+				*/
+				//return 4;
+			}
+			continua_ar:;
+			return ret_ar;
 
 		}
 		/// <summary>
@@ -420,7 +499,7 @@ namespace Picasso
 				else if (amanda_is_webp)
 				{
 					//Process process = new Process();
-mg.Dispose();
+					mg.Dispose();
 					string ricardo_outfile="";
 					/*
 					if(!File.Exists ("cwebp.exe"))
@@ -473,9 +552,6 @@ mg.Dispose();
 						MessageBox.Show("Return error from cwebp DLL: " + ret_ar);
 						return 4;
 					}
-
-
-
 
 				}
 				else

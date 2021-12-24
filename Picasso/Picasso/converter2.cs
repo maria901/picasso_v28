@@ -123,7 +123,14 @@ namespace Picasso
 				{
 					input.Text = input_file_k;
 
-					int ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+					int ricardo_returnvalue= Alladin_converter.amanda_ricardo_load_AVIF_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
+					
+					if(0 == ricardo_returnvalue)
+					{
+						goto deu_certo_ric;
+					}
+						
+						ricardo_returnvalue=Alladin_converter.amanda_ricardo_load_webp_image_file(input.Text, ref ar_png_file, ref ar_png_file_to_delete);
 					if(1==ricardo_returnvalue)
 					{
 						
@@ -141,6 +148,9 @@ namespace Picasso
 					{
 						ar_png_file=input.Text;//file is not a webp file
 					}
+					
+					deu_certo_ric:;
+					
 					Alladin_converter.dprintf ("Arquivo " + ar_png_file);
 
 					output.Text = input_file_k + ".jpg";
@@ -392,6 +402,10 @@ namespace Picasso
 		void Visit_BWClick(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process.Start("https://ARsoftware.net.br/bw");
+		}
+		void MenuStrip1ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+	
 		}
 		
 	}
