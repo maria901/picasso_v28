@@ -1,4 +1,4 @@
-
+ 
  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   *                                                                                *
   *      Licensa de Cópia (C) <202*>  <Corporação do Trabalho Binário>             *
