@@ -297,6 +297,7 @@ namespace Picasso
 
 		private void executor_Click(object sender, EventArgs e)
 		{
+			bool is_avif_ric = true == is_avif_amanda_.Checked;
 			int amanda_returnvalue=0;
 			executor.Text = "Working...";
 			executor.Refresh();
@@ -314,7 +315,7 @@ namespace Picasso
 					is_webp_amanda=true;
 				}
 
-				amanda_returnvalue=Alladin_converter.microsoft_convert2(ar_png_file, output.Text, int.Parse(width.Text), int.Parse(height.Text), quality.Value, is_ong_alladin, is_webp_amanda);
+				amanda_returnvalue=Alladin_converter.microsoft_convert2(ar_png_file, output.Text, int.Parse(width.Text), int.Parse(height.Text), quality.Value, is_ong_alladin, is_webp_amanda, is_avif_ric);
 			}
 			catch (Exception ee)
 			{
@@ -384,6 +385,7 @@ namespace Picasso
 			{
 
 				PNG.Checked = false;
+				is_avif_amanda_.Checked = false;
 				output.Text = of.FileName + ".webp";
 
 			}
@@ -394,6 +396,7 @@ namespace Picasso
 			{
 
 				WebP.Checked = false;
+				is_avif_amanda_.Checked = false;
 				output.Text = of.FileName + ".png";
 
 			}
@@ -416,6 +419,15 @@ namespace Picasso
 		{
 			
 		}
-		
+		void AVIF_MouseUp(object sender, MouseEventArgs e)
+		{
+			;//ok ...
+			PNG.Checked = false;
+			WebP.Checked = false;
+			
+			is_avif_amanda_.Checked = true;
+			
+			output.Text = of.FileName + ".avif";
+		}
 	}
 }

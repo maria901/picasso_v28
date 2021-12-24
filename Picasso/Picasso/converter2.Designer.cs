@@ -85,6 +85,7 @@ namespace Picasso
         	this.PNG = new System.Windows.Forms.CheckBox();
         	this.WebP = new System.Windows.Forms.CheckBox();
         	this.visit_BW = new System.Windows.Forms.Label();
+        	this.is_avif_amanda_ = new System.Windows.Forms.CheckBox();
         	((System.ComponentModel.ISupportInitialize)(this.quality)).BeginInit();
         	this.menuStrip1.SuspendLayout();
         	this.SuspendLayout();
@@ -282,11 +283,23 @@ namespace Picasso
         	this.visit_BW.Text = "https://arsoftware.net.br/binarywork";
         	this.visit_BW.Click += new System.EventHandler(this.Visit_BWClick);
         	// 
+        	// is_avif_amanda_
+        	// 
+        	this.is_avif_amanda_.AutoSize = true;
+        	this.is_avif_amanda_.Location = new System.Drawing.Point(402, 106);
+        	this.is_avif_amanda_.Name = "is_avif_amanda_";
+        	this.is_avif_amanda_.Size = new System.Drawing.Size(49, 17);
+        	this.is_avif_amanda_.TabIndex = 33;
+        	this.is_avif_amanda_.Text = "AVIF";
+        	this.is_avif_amanda_.UseVisualStyleBackColor = true;
+        	this.is_avif_amanda_.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AVIF_MouseUp);
+        	// 
         	// converter2
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         	this.ClientSize = new System.Drawing.Size(1333, 277);
+        	this.Controls.Add(this.is_avif_amanda_);
         	this.Controls.Add(this.visit_BW);
         	this.Controls.Add(this.WebP);
         	this.Controls.Add(this.PNG);
@@ -345,5 +358,6 @@ namespace Picasso
         private System.Windows.Forms.CheckBox PNG;
         private System.Windows.Forms.CheckBox WebP;
         private System.Windows.Forms.Label visit_BW;
+        private System.Windows.Forms.CheckBox is_avif_amanda_;
     }
 }
