@@ -100,7 +100,7 @@ namespace Picasso
 		/// <param name="quality_ar">Since the output is always png if the exntension of the
 		/// output file is png this value is irrelevant, need to be 100
 		/// </param>
-		/// <param name="input_filename_ar">the ansi based input AVIF file, cannot be releative as always with 
+		/// <param name="input_filename_ar">the ansi based input AVIF file, cannot be releative as always with
 		/// our software</param>
 		/// <param name="output_filename_ar">the output png file if the output extension is png</param>
 		/// <returns>
@@ -133,7 +133,13 @@ namespace Picasso
 		/// </returns>
 		[DllImport("heif-convert_v.DLL")]
 		public static extern int main_do_ric(string quality_ar, string input_filename_ar, string output_filename_ar);
-	
+		/// <summary>
+		/// Function despite the name to encode a png file to AVIF
+		/// </summary>
+		/// <param name="quality_ar">0 to 100, but notice that 100 is not lossless, lossless will be added today (25/dec/2021)</param>
+		/// <param name="input_filename_ar"></param>
+		/// <param name="output_filename_ar"></param>
+		/// <returns></returns>
 		[DllImport("heif-enc_v.DLL")]
 		public static extern int main_do_ric_encode(string quality_ar, string input_filename_ar, string output_filename_ar);
 
@@ -308,7 +314,7 @@ namespace Picasso
 					MessageBox.Show("Impossible to convert file input file to internal png file");
 					return 4;
 				}
-				*/
+				 */
 				//return 4;
 			}
 			continua_ar:;
