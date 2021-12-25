@@ -118,25 +118,18 @@ namespace Picasso
 		/// 9   - Could not read HEIF/AVIF image<br></br>
 		/// 10  - Input image has undefined bit-depth<br></br>
 		/// 11  - Could not decode image<br></br>
+		/// 12  - Could not write image<br></br>
+		/// 13  - Could not read depth channel<br></br>
+		/// 14  - Could not decode depth image<br></br>
+		/// 15  - Could not write depth image<br></br>
+		/// 16  - Universe will explode in 60 seconds<br></br>
+		/// 17  - Could not read auxiliary image<br></br>
+		/// 18  - Could not decode auxiliary image<br></br>
+		/// 19  - Could not get type of auxiliary image<br></br>
+		/// 20  - Could not write auxiliary image<br></br>
 		/// 
 		/// 101 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
 		/// 102 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
-		/// 
 		/// </returns>
 		[DllImport("heif-convert_v.DLL")]
 		public static extern int main_do_ric(string quality_ar, string input_filename_ar, string output_filename_ar);
