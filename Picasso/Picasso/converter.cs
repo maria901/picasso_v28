@@ -139,7 +139,22 @@ namespace Picasso
 		/// <param name="quality_ar">0 to 100, but notice that 100 is not lossless, lossless will be added today (25/dec/2021)</param>
 		/// <param name="input_filename_ar">the input file as png, only png allowed for the moment, and at this moment ansi path as you can see in the Pinvoke call</param>
 		/// <param name="output_filename_ar">the output AVIF file to create, cannot be relative, and it is ansi for the moment (25/dec/2021)</param>
-		/// <returns></returns>
+		/// <returns>
+		/// 
+		/// 1      - Could not create context object<br></br>
+		/// 5      - Invalid quality factor. Must be between 0 and 100<br></br>
+		/// 6      - Encoder error<br></br>
+		/// 7      - No encoder available (cannot occur)<br></br>
+		/// 8      - Internal error (cannot occur)<br></br>
+		/// 9      - Input file doesnot have a png extension<br></br>
+		/// 10     - Lossless encode requested but lossy enabled (Internal error)<br></br>
+		/// 11     - Image only has a size of 1 pixel width or height. Cannot crop to even size<br></br>
+		/// 12     - Could not crop image (image need to be cropped sometimes when the requested width or height is
+		/// not a multiples of 2<br></br>
+		/// 13     - Could not encode HEIF/AVIF file<br></br>
+		/// 500    - Unknown encoder ID (internal error, cannot occur)<br></br>
+		/// 
+		/// </returns>
 		[DllImport("heif-enc_v.DLL")]
 		public static extern int main_do_ric_encode(string quality_ar, string input_filename_ar, string output_filename_ar);
 
