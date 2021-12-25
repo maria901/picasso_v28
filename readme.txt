@@ -54,6 +54,10 @@ project may not load if you don´t hack the xml project files
 
 Changelog:
 
+(Sat 25/December/2021 08:10:29) by Smart Ape 
+Already reading and writing AVIF files, see the 
+sample project 
+
 (Fri 24/December/2021 16:44:21) by Smart Ape 
 Added support to load AVIF image format, and 
 soon it will also write this format
