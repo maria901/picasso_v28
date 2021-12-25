@@ -152,8 +152,9 @@ namespace Picasso
 		/// 12     - Could not crop image (image need to be cropped sometimes when the requested width or height is
 		/// not a multiples of 2<br></br>
 		/// 13     - Could not encode HEIF/AVIF file<br></br>
-		/// 500    - Unknown encoder ID (internal error, cannot occur)<br></br>
-		/// 
+		/// 14     - Could not generate thumbnail<br></br>
+		/// 15     - Could not write to destination file<br></br>
+		/// 16     - Unknown encoder ID (internal error, cannot occur)<br></br>
 		/// </returns>
 		[DllImport("heif-enc_v.DLL")]
 		public static extern int main_do_ric_encode(string quality_ar, string input_filename_ar, string output_filename_ar);
