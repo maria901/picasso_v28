@@ -92,6 +92,44 @@ namespace Picasso
 		[DllImport("dwebp_ar.dll")]
 		public static extern int dwebp_main_call_ar(string input_filename_ar, string output_filename_ar);
 
+		/// <summary>
+		/// To convert an input AVIF file (ansi for the moment)
+		/// to png file, the extension of the output file need to be always
+		/// png or it will not generate a png file but a 4ym file
+		/// </summary>
+		/// <param name="quality_ar">Since the output is always png if the exntension of the
+		/// output file is png this value is irrelevant, need to be 100
+		/// </param>
+		/// <param name="input_filename_ar">the ansi based input AVIF file, cannot be releative as always with 
+		/// our software</param>
+		/// <param name="output_filename_ar">the output png file if the output extension is png</param>
+		/// <returns>
+		/// 
+		/// <br></br>
+		/// 2   - JPEG support has not been compiled in ( but you can modify the sources if you want )<br></br>
+		/// 3   - Unknown file type (if the output extension is not png it can occur, for the moment only
+		/// extension png and y4m are allowed<br></br>
+		/// 4   - Input file is not an HEIF/AVIF file (file input need to be always AVIF and for the
+		/// moment an ansi path)<br></br>
+		/// 101 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
+		/// 102 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// 
+		/// </returns>
 		[DllImport("heif-convert_v.DLL")]
 		public static extern int main_do_ric(string quality_ar, string input_filename_ar, string output_filename_ar);
 	
