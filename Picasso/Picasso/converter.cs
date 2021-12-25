@@ -111,6 +111,14 @@ namespace Picasso
 		/// extension png and y4m are allowed<br></br>
 		/// 4   - Input file is not an HEIF/AVIF file (file input need to be always AVIF and for the
 		/// moment an ansi path)<br></br>
+		/// 5   - Input file is an unsupported HEIF/AVIF file type<br></br>
+		/// 6   - Could not create context object<br></br>
+		/// 7   - Could not read HEIF/AVIF file<br></br>
+		/// 8   - File doesn't contain any images<br></br>
+		/// 9   - Could not read HEIF/AVIF image<br></br>
+		/// 10  - Input image has undefined bit-depth<br></br>
+		/// 11  - Could not decode image<br></br>
+		/// 
 		/// 101 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
 		/// 102 - Internal error, cannot occur, only if you modify the sources in C++<br></br>
 		/// 
