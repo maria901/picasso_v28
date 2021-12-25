@@ -159,6 +159,11 @@ namespace Picasso
 		[DllImport("heif-enc_v.DLL")]
 		public static extern int main_do_ric_encode(string quality_ar, string input_filename_ar, string output_filename_ar);
 
+		[DllImport("heif-enc_v.DLL")]
+		public static extern int 
+			main_do_ric_encode_lossless(string input_filename_ar, 
+			                            string output_filename_ar);
+		
 		[DllImport("kernel32.dll")]
 		static extern void OutputDebugString(string lpOutputString);
 
@@ -475,7 +480,7 @@ namespace Picasso
 			mg.Dispose();
 		}
 
-		public static int microsoft_convert2(string input, string output, int width, int height, int quality, bool alladin_is_png, bool amanda_is_webp, bool is_avif_ric)
+		public static int microsoft_convert2(string input, string output, int width, int height, int quality, bool alladin_is_png, bool amanda_is_webp, bool is_avif_ric, bool is_avif_ric_lossless)
 		{
 			int ret_ar;
 			//int heightb;
@@ -559,6 +564,64 @@ namespace Picasso
 					bp.Save(output, ImageFormat.Png);
 					bp.Dispose();
 					mg.Dispose();
+				}				
+				else if (is_avif_ric_lossless)
+				{
+					
+					//Process process = new Process();
+					mg.Dispose();
+					string ricardo_outfile="";
+					/*
+					if(!File.Exists ("cwebp.exe"))
+					{
+						return 1;
+					}
+					 */
+					//return 0;
+
+					string amanda_filename = Application.StartupPath + "\\" + ".$$$_2_me_desculpe_mas_minha_esposa_eh_uma_gata_$$$";
+					string ricardo_extension=".png";
+					int ricardo_counter=0;
+
+					File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+
+					while(File.Exists (amanda_filename+ricardo_counter.ToString ()+ricardo_extension))
+					{
+						File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+						ricardo_counter++;
+						File.Delete (amanda_filename+ricardo_counter.ToString ()+ricardo_extension);
+						if(10==ricardo_counter)
+						{
+
+							return 2;
+
+						}
+					}
+
+					ricardo_outfile=amanda_filename+ricardo_counter.ToString ()+ricardo_extension;
+
+					bp.Save(ricardo_outfile, ImageFormat.Png);
+					bp.Dispose();
+					
+					/*
+					process.StartInfo.FileName = @"cwebp.exe";
+					process.StartInfo.Arguments = "-q "+quality.ToString()+" \"" + ricardo_outfile  + "\" -o \"" + output + "\" ";
+					//  cwebp [options] -q quality input.png -o output.webp
+					Alladin_converter.dprintf("Argumentos: " + process.StartInfo.FileName + " " + process.StartInfo.Arguments);
+
+					process.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
+					process.Start();
+					process.WaitForExit();
+					 */
+					ret_ar = main_do_ric_encode_lossless(ricardo_outfile, output);
+					
+					File.Delete (ricardo_outfile);
+
+					if(0 != ret_ar)
+					{
+						MessageBox.Show("Return error from AVIF DLL for the Lossless call: " + ret_ar);
+						return 4;
+					}
 				}
 				else if (is_avif_ric)
 				{
@@ -617,7 +680,7 @@ namespace Picasso
 						MessageBox.Show("Return error from AVIF DLL: " + ret_ar);
 						return 4;
 					}
-				}
+				}				
 				else if (amanda_is_webp)
 				{
 					//Process process = new Process();

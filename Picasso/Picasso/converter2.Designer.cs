@@ -86,6 +86,7 @@ namespace Picasso
         	this.WebP = new System.Windows.Forms.CheckBox();
         	this.visit_BW = new System.Windows.Forms.Label();
         	this.is_avif_amanda_ = new System.Windows.Forms.CheckBox();
+        	this.AVIF_Lossless_m = new System.Windows.Forms.CheckBox();
         	((System.ComponentModel.ISupportInitialize)(this.quality)).BeginInit();
         	this.menuStrip1.SuspendLayout();
         	this.SuspendLayout();
@@ -294,11 +295,23 @@ namespace Picasso
         	this.is_avif_amanda_.UseVisualStyleBackColor = true;
         	this.is_avif_amanda_.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AVIF_MouseUp);
         	// 
+        	// AVIF_Lossless_m
+        	// 
+        	this.AVIF_Lossless_m.AutoSize = true;
+        	this.AVIF_Lossless_m.Location = new System.Drawing.Point(460, 106);
+        	this.AVIF_Lossless_m.Name = "AVIF_Lossless_m";
+        	this.AVIF_Lossless_m.Size = new System.Drawing.Size(92, 17);
+        	this.AVIF_Lossless_m.TabIndex = 34;
+        	this.AVIF_Lossless_m.Text = "AVIF Lossless";
+        	this.AVIF_Lossless_m.UseVisualStyleBackColor = true;
+        	this.AVIF_Lossless_m.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AVIF_Lossless_m_MouseUp);
+        	// 
         	// converter2
         	// 
         	this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
         	this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         	this.ClientSize = new System.Drawing.Size(1333, 277);
+        	this.Controls.Add(this.AVIF_Lossless_m);
         	this.Controls.Add(this.is_avif_amanda_);
         	this.Controls.Add(this.visit_BW);
         	this.Controls.Add(this.WebP);
@@ -359,5 +372,6 @@ namespace Picasso
         private System.Windows.Forms.CheckBox WebP;
         private System.Windows.Forms.Label visit_BW;
         private System.Windows.Forms.CheckBox is_avif_amanda_;
+        private System.Windows.Forms.CheckBox AVIF_Lossless_m;
     }
 }

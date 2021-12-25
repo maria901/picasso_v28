@@ -318,7 +318,7 @@ namespace Picasso
 					is_webp_amanda=true;
 				}
 
-				amanda_returnvalue=Alladin_converter.microsoft_convert2(ar_png_file, output.Text, int.Parse(width.Text), int.Parse(height.Text), quality.Value, is_ong_alladin, is_webp_amanda, is_avif_ric);
+				amanda_returnvalue=Alladin_converter.microsoft_convert2(ar_png_file, output.Text, int.Parse(width.Text), int.Parse(height.Text), quality.Value, is_ong_alladin, is_webp_amanda, is_avif_ric, AVIF_Lossless_m.Checked);
 			}
 			catch (Exception ee)
 			{
@@ -386,7 +386,7 @@ namespace Picasso
 		{
 			if(WebP.Checked == true)
 			{
-
+				AVIF_Lossless_m.Checked = false;
 				PNG.Checked = false;
 				is_avif_amanda_.Checked = false;
 				output.Text = of.FileName + ".webp";
@@ -397,7 +397,7 @@ namespace Picasso
 		{
 			if(PNG.Checked == true)
 			{
-
+				AVIF_Lossless_m.Checked = false;
 				WebP.Checked = false;
 				is_avif_amanda_.Checked = false;
 				output.Text = of.FileName + ".png";
@@ -427,9 +427,18 @@ namespace Picasso
 			;//ok ...
 			PNG.Checked = false;
 			WebP.Checked = false;
-			
+			AVIF_Lossless_m.Checked = false;
 			is_avif_amanda_.Checked = true;
 			
+			output.Text = of.FileName + ".avif";
+		}
+		void AVIF_Lossless_m_MouseUp(object sender, MouseEventArgs e)
+		{
+			PNG.Checked = false;
+			WebP.Checked = false;
+			
+			is_avif_amanda_.Checked = false;
+			AVIF_Lossless_m.Checked = true;
 			output.Text = of.FileName + ".avif";
 		}
 	}
