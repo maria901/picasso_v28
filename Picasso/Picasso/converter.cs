@@ -137,8 +137,8 @@ namespace Picasso
 		/// Function despite the name to encode a png file to AVIF
 		/// </summary>
 		/// <param name="quality_ar">0 to 100, but notice that 100 is not lossless, lossless will be added today (25/dec/2021)</param>
-		/// <param name="input_filename_ar"></param>
-		/// <param name="output_filename_ar"></param>
+		/// <param name="input_filename_ar">the input file as png, only png allowed for the moment, and at this moment ansi path as you can see in the Pinvoke call</param>
+		/// <param name="output_filename_ar">the output AVIF file to create, cannot be relative, and it is ansi for the moment (25/dec/2021)</param>
 		/// <returns></returns>
 		[DllImport("heif-enc_v.DLL")]
 		public static extern int main_do_ric_encode(string quality_ar, string input_filename_ar, string output_filename_ar);
